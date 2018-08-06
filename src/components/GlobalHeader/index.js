@@ -1,15 +1,5 @@
 import React, { PureComponent } from "react";
-import {
-  Menu,
-  Icon,
-  Spin,
-  Tag,
-  Dropdown,
-  Avatar,
-  Divider,
-  Tooltip
-} from "antd";
-import moment from "moment";
+import { Menu, Icon, Dropdown, Avatar, Tooltip } from "antd";
 
 import styles from "./index.module.less";
 
@@ -30,14 +20,7 @@ export default class GlobalHeader extends PureComponent {
     window.dispatchEvent(event);
   }
   render() {
-    const {
-      currentUser = {},
-      collapsed,
-      fetchingNotices,
-      isMobile,
-      logo,
-      onMenuClick
-    } = this.props;
+    const { currentUser = {}, collapsed, onMenuClick } = this.props;
     const menu = (
       <Menu className={styles.menu} selectedKeys={[]} onClick={onMenuClick}>
         <Menu.Item disabled>
@@ -62,12 +45,6 @@ export default class GlobalHeader extends PureComponent {
 
     return (
       <div className={styles.header}>
-        {isMobile && [
-          <a href="#">
-            <img src={logo} alt="logo" width="32" />
-          </a>,
-          <Divider type="vertical" key="line" />
-        ]}
         <Icon
           className={styles.trigger}
           type={collapsed ? "menu-unfold" : "menu-fold"}
@@ -94,7 +71,7 @@ export default class GlobalHeader extends PureComponent {
                   "https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png"
                 }
               />
-              <span className={styles.name}>roc_tootwo</span>
+              <span className={styles.name}>{currentUser.name}</span>
             </span>
           </Dropdown>
         </div>

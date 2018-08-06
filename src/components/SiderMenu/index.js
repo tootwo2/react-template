@@ -46,7 +46,7 @@ export default class SiderMenu extends PureComponent {
         className={styles.sider}
       >
         <div className={styles.logo} key="logo">
-          <a href="#">
+          <a href="/">
             <img src={logo} alt="logo" />
             <h1>Ant Design Pro</h1>
           </a>

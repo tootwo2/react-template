@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
-import { Layout, Icon, message } from "antd";
-import { Route, Link, Switch } from "react-router-dom";
+import { Layout, Icon } from "antd";
+import { Route, Switch } from "react-router-dom";
 import SiderMenu from "../components/SiderMenu";
 import GlobalHeader from "../components/GlobalHeader";
 import GlobalFooter from "../components/GlobalFooter";

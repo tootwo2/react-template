@@ -28,7 +28,7 @@ const desc2 = (
       <Icon type="dingding-o" style={{ color: "#00A0E9", marginLeft: 8 }} />
     </div>
     <div>
-      <a href="">催一下</a>
+      <a href="/#">催一下</a>
     </div>
   </div>
 );

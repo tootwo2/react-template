@@ -1,4 +1,4 @@
-import React, { createElement } from "react";
+import React from "react";
 import classNames from "classnames";
 import { Button } from "antd";
 import config from "./typeConfig";

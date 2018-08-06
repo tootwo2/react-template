@@ -20,7 +20,7 @@ const extra = (
         type="close-circle-o"
       />
       您的账户已被冻结
-      <a style={{ marginLeft: 16 }}>
+      <a href="/#" style={{ marginLeft: 16 }}>
         立即解冻 <Icon type="right" />
       </a>
     </div>
@@ -30,7 +30,7 @@ const extra = (
         type="close-circle-o"
       />
       您的账户还不具备申请资格
-      <a style={{ marginLeft: 16 }}>
+      <a href="/#" style={{ marginLeft: 16 }}>
         立即升级 <Icon type="right" />
       </a>
     </div>
