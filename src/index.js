@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter as Router } from "react-router-dom";
 import { AppContainer } from "react-hot-loader";
 import { applyMiddleware, compose, createStore } from "redux";
 import { createBrowserHistory } from "history";

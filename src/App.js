@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { ConnectedRouter } from "connected-react-router";
 import "./App.css";
 
