@@ -13,10 +13,8 @@ const menuData = [
         path: "monitor"
       },
       {
-        name: "工作台",
-        path: "workplace"
-        // hideInBreadcrumb: true,
-        // hideInMenu: true,
+        name: "计数",
+        path: "count"
       }
     ]
   },

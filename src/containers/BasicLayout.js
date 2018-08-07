@@ -7,6 +7,7 @@ import GlobalFooter from "../components/GlobalFooter";
 import Exception from "../components/Exception";
 import Success from "./Success";
 import Error from "./Error";
+import Counter from "./Counter";
 import menuData from "../common/menu";
 import logo from "./logo.svg";
 
@@ -17,6 +18,10 @@ const routes = [
     path: "/",
     exact: true,
     component: () => <h2>Welcome!</h2>
+  },
+  {
+    path: "/count",
+    component: () => <Counter />
   },
   {
     path: "/success",

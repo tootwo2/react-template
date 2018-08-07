@@ -1,5 +1,6 @@
 const { injectBabelPlugin } = require("react-app-rewired");
 const rewireLess = require("react-app-rewire-less-modules");
+const rewireReactHotLoader = require("react-app-rewire-hot-loader");
 
 module.exports = function override(config, env) {
   config = injectBabelPlugin(
@@ -15,5 +16,6 @@ module.exports = function override(config, env) {
     javascriptEnabled: true
     // modifyVars: {"@primary-color": "#1890ff"}
   })(config, env);
+  config = rewireReactHotLoader(config, env);
   return config;
 };

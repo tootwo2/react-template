@@ -1,12 +1,15 @@
 import React, { Component } from "react";
+import { ConnectedRouter } from "connected-react-router";
 import "./App.css";
 
 import BasicLayout from "./containers/BasicLayout";
 
-class App extends Component {
-  render() {
-    return <BasicLayout />;
-  }
-}
+const App = ({ history }) => {
+  return (
+    <ConnectedRouter history={history}>
+      <BasicLayout />
+    </ConnectedRouter>
+  );
+};
 
 export default App;
