@@ -9,8 +9,12 @@ const menuData = [
         path: "analysis"
       },
       {
-        name: "监控页",
-        path: "monitor"
+        name: "拖拽demo",
+        path: "dragDemo"
+      },
+      {
+        name: "拖拽表格demo",
+        path: "dragTableDemo"
       },
       {
         name: "计数",

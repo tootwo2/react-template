@@ -7,6 +7,8 @@ import GlobalFooter from "../components/GlobalFooter";
 import Exception from "../components/Exception";
 import Success from "./Success";
 import Error from "./Error";
+import DragDemo from "./DragDemo";
+import DragTableDemo from "./DragTableDemo";
 import Counter from "./Counter";
 import menuData from "../common/menu";
 import logo from "./logo.svg";
@@ -21,15 +23,17 @@ const routes = [
   },
   {
     path: "/count",
-    component: () => <Counter />
+    component: Counter
   },
+  { path: "/dragDemo", component: DragDemo },
+  { path: "/DragTableDemo", component: DragTableDemo },
   {
     path: "/success",
-    component: () => <Success />
+    component: Success
   },
   {
     path: "/fail",
-    component: () => <Error />
+    component: Error
   },
   {
     path: "/403",
@@ -70,7 +74,13 @@ export default class BasicLayout extends Component {
               onCollapse={collapsed => this.setState({ collapsed })}
             />
           </Header>
-          <Content style={{ margin: "24px 24px 0", height: "100%" }}>
+          <Content
+            style={{
+              margin: "24px 24px 0",
+              height: "100%",
+              background: "white"
+            }}
+          >
             <Switch>
               {routes.map((route, index) => (
                 <Route
@@ -82,6 +92,7 @@ export default class BasicLayout extends Component {
               ))}
               <Route exact path="/" render={() => <div>hh</div>} />
 
+              <Route exact path="/error/:id" component={Counter} />
               <Route
                 render={() => (
                   <Exception
